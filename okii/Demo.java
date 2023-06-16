@@ -1,36 +1,22 @@
-package Question01A;
+package Question04A;
 
 public class Demo {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		CarAirBag fAirBag = new FrontAirBag();
+		CarAirBag sAirBag = new SideAirBag();
+		
+		new NissanCar(fAirBag).assembleLight();
+		new NissanCar(fAirBag).assembleMotionSensor();
+		new NissanCar(sAirBag).assembleMotionSensor();
+		
+		new ToyotaCar(fAirBag).assembleLight();
+		new ToyotaCar(fAirBag).assembleMotionSensor();
+		new ToyotaCar(sAirBag).assembleLight();
+		new ToyotaCar(sAirBag).assembleMotionSensor();
 
-		Pet squirrel = new Squirrel("run3");
-		squirrel.cuddle();
-		squirrel.feed();
-		squirrel.GetTotalPoints();
-		
-		System.out.println();
-		
-		Pet squirrel2 = new Squirrel("Run5");
-		squirrel2.cuddle();
-		squirrel2.feed();
-		squirrel2.GetTotalPoints();
-		
-		System.out.println();
-		
-		Pet garfield = new Cat();
-		garfield.clean();
-		garfield.feed();
-		garfield.cuddle();
-		garfield.GetTotalPoints();
-		
-		System.out.println();
-		
-		Pet parrot1 = new Parrot("walk");
-		parrot1.feed();
-		parrot1.GetTotalPoints();
-		
-		
 	}
 
 }
